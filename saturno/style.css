@@ -1,0 +1,78 @@
+* {
+     font-family: 'Titillium Web', sans-serif;;
+}
+
+body {
+    background-image: url(back/saturn.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+#painel {
+    height: 100vh;
+    width: 80px;
+    background-color: black;
+    border-right: 5px solid white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;; 
+ 
+}
+
+ion-icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+h1 {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    animation-name: texto;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    color: rgb(139, 139, 11);
+ }
+
+p {
+    background-color: rgba(0, 0, 0, 0.628);
+    width: 700px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 1.6em;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    animation-name: texto;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes texto {
+    to {
+        transform: translate(-50%,40%);
+   
+        opacity: 1;
+        
+    }
+}
